@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Flatlay Ai Продакшн. Видео-тест: гранулы ЕвроХим</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2396FF1A'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='27' font-weight='800' text-anchor='middle' fill='%23083300'%3EFL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --carbon: #0C0A09; --onyx: #121212; --graphite: #292A2E;
+    --smoke: #71737A; --mist: #F2F1F0; --fog: #E6E6E7;
+    --paper: #FFFFFF; --lime: #96FF1A; --spring: #D6FFA6; --forest: #083300;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    background: var(--paper); color: var(--carbon);
+    line-height: 1.55; font-size: 16px;
+    -webkit-user-select: none; user-select: none;
+  }
+  img, video { display: block; max-width: 100%; -webkit-user-drag: none; user-select: none; }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--lime); color: var(--forest); }
+  :focus-visible { outline: 2px solid var(--lime); outline-offset: 2px; }
+  .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+
+  header {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.92); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--fog);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 15.5px; letter-spacing: -0.01em; }
+  .brand b {
+    color: var(--forest); background: var(--lime); border-radius: 8px;
+    padding: 2px 9px 3px; font-size: 14px;
+  }
+  .bar .meta { font-size: 11.5px; color: var(--smoke); }
+
+  .hero { padding: 72px 0 0; }
+  .hero h1 {
+    font-size: clamp(2.0rem, 5vw, 3.2rem); line-height: 1.06;
+    letter-spacing: -0.03em; font-weight: 800; max-width: 14ch;
+  }
+  .hero h1 mark {
+    background: var(--lime); color: var(--forest); border-radius: 8px;
+    padding: 0 10px 4px; display: inline-block; white-space: nowrap;
+  }
+  .hero .lead { margin-top: 18px; color: var(--smoke); font-size: 16.5px; max-width: 52ch; }
+
+  .video-sec { padding: 44px 0 8px; display: flex; flex-direction: column; align-items: center; }
+  .vframe {
+    width: min(420px, 86vw); border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--fog);
+    box-shadow: 0 30px 80px rgba(12,10,9,0.16);
+    background: var(--onyx);
+  }
+  .vframe video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; }
+  .chips { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+  .chip {
+    font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 12px;
+    padding: 7px 12px; border-radius: 999px; border: 1px solid var(--fog); color: var(--graphite);
+    background: var(--paper);
+  }
+  .chip.lime { background: var(--lime); color: var(--forest); border-color: var(--lime); font-weight: 500; }
+
+  .note {
+    margin: 34px auto 0; max-width: 62ch; text-align: center;
+    color: var(--smoke); font-size: 14.5px;
+    padding: 16px 20px; border-top: 1px solid var(--fog); border-bottom: 1px solid var(--fog);
+  }
+  .note b { color: var(--carbon); font-weight: 600; }
+
+  section.contacts { padding: 72px 0 8px; }
+  .sec-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; letter-spacing: -0.02em; }
+  .contact-card { margin-top: 24px; border: 1px solid var(--fog); border-radius: 14px; padding: 6px 26px; }
+  .cline {
+    padding: 15px 0; display: flex; justify-content: space-between; align-items: center;
+    gap: 24px; font-size: 15.5px; border-bottom: 1px solid var(--fog);
+  }
+  .cline:last-child { border-bottom: none; }
+  .cline .k { color: var(--smoke); font-size: 13.5px; }
+  .cline .v { font-weight: 600; text-align: right; }
+  .cline .v a { border-bottom: 2px solid var(--lime); padding-bottom: 1px; }
+
+  footer { margin-top: 84px; border-top: 1px solid var(--fog); padding: 20px 0 34px; }
+  footer .f { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    font-size: 11.5px; color: var(--smoke); }
+
+  @media (max-width: 560px) {
+    .hero { padding-top: 48px; }
+    .cline { flex-direction: column; align-items: flex-start; gap: 3px; }
+    .cline .v { text-align: left; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="brand"><b>FL</b><span>Flatlay Ai Продакшн</span></div>
+    <div class="meta mono">тест · октябрь 2026</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>Видео-тест: <mark>гранулы ЕвроХим</mark></h1>
+    <p class="lead">Предметная AI-съёмка удобрений — проверка фактуры и физики гранул в движении.</p>
+  </section>
+
+  <section class="video-sec">
+    <div class="vframe">
+      <video
+        src="eurochem-test.mp4"
+        poster="poster.jpg"
+        playsinline
+        controls
+        preload="metadata"
+        controlslist="nodownload noremoteplayback"
+        disablepictureinpicture
+        oncontextmenu="return false"></video>
+    </div>
+    <div class="chips">
+      <span class="chip lime">9:16 · 17 сек</span>
+      <span class="chip">черновой тест</span>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h2 class="sec-title">Контакты</h2>
+    <div class="contact-card">
+      <div class="cline"><span class="k">Руководитель продакшна</span><span class="v">Алик</span></div>
+      <div class="cline"><span class="k">Телефон и WhatsApp</span><span class="v"><a href="https://wa.me/79775479200">+7 977 547-92-00</a></span></div>
+      <div class="cline"><span class="k">Почта</span><span class="v"><a href="mailto:info@flatlay.ru">info@flatlay.ru</a></span></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap f mono">
+    <span>Flatlay Ai Продакшн</span>
+    <span>pro.aoganov.ru · видео-тест</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var KEY = 'ev-vid';
+  var uid;
+  try { uid = localStorage.getItem(KEY); } catch (e) {}
+  if (!uid) {
+    uid = (crypto.randomUUID && crypto.randomUUID()) ||
+      'u-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
+    try { localStorage.setItem(KEY, uid); } catch (e) {}
+  }
+  function send(p, extra) {
+    var q = 'p=' + encodeURIComponent(p) + '&u=' + encodeURIComponent(uid) + '&ts=' + Date.now();
+    if (extra) for (var k in extra) q += '&' + k + '=' + encodeURIComponent(extra[k]);
+    var url = '/collect.gif?' + q;
+    try {
+      if (navigator.sendBeacon) { navigator.sendBeacon(url); return; }
+    } catch (e) {}
+    var img = new Image(); img.src = url;
+  }
+
+  var t0 = Date.now();
+  send('page', { r: document.referrer || 'direct', w: window.innerWidth });
+
+  var v = document.querySelector('video');
+  var watched = 0, lastT = 0, lastTick = 0, marks = {};
+  if (v) {
+    v.addEventListener('play', function () { lastT = v.currentTime; send('play', { v: watched.toFixed(1) }); });
+    v.addEventListener('pause', function () {
+      watched += Math.max(0, v.currentTime - lastT); lastT = v.currentTime;
+      send('pause', { v: watched.toFixed(1) });
+    });
+    v.addEventListener('ended', function () {
+      watched += Math.max(0, v.duration - lastT);
+      send('q100', { v: watched.toFixed(1) });
+    });
+    v.addEventListener('timeupdate', function () {
+      var d = v.duration || 17.5;
+      watched += Math.max(0, v.currentTime - lastT); lastT = v.currentTime;
+      var pct = v.currentTime / d;
+      [['q25', .25], ['q50', .5], ['q75', .75]].forEach(function (m) {
+        if (pct >= m[1] && !marks[m[0]]) { marks[m[0]] = 1; send(m[0], { v: watched.toFixed(1) }); }
+      });
+      if (v.currentTime - lastTick >= 5) { lastTick = v.currentTime; send('sec', { v: watched.toFixed(1) }); }
+    });
+  }
+  function leave() {
+    send('leave', { v: watched.toFixed(1), t: ((Date.now() - t0) / 1000).toFixed(0) });
+  }
+  window.addEventListener('pagehide', leave);
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') leave();
+  });
+
+  document.addEventListener('contextmenu', function (e) {
+    if (e.target && (e.target.tagName === 'VIDEO' || e.target.tagName === 'IMG')) e.preventDefault();
+  });
+})();
+</script>
+
+</body>
+</html>
